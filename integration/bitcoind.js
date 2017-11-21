@@ -6,7 +6,7 @@ var chai = require('chai');
 var should = chai.should();
 var sinon = require('sinon');
 
-var bitcore = require('bitcore-lib-dash');
+var bitcore = require('bitcore-lib-chaincoin');
 var _ = bitcore.deps._;
 var Random = bitcore.crypto.Random;
 var BN = bitcore.crypto.BN;
@@ -26,16 +26,16 @@ var messages = new Messages({
   network: network
 });
 var blockHash = {
-  'livenet': '0000000000010eedb86810ef7ce941fabc7d2be0c0fa2bf8dfcb5b48f573d15b',
-  'testnet': '0000000058cc069d964711cd25083c0a709f4df2b34c8ff9302ce71fe5b45786'
+  'livenet': '000000180f847fbba4777a1d61858401b98bb9828808892bdfed1a206dbf4aef',
+  'testnet': '0000074147ab5b8e114eb656e89b81ca24ff3eb53e2cec167cb2d77570499921'
 };
 var stopBlock = {
-  'livenet': '000000000014838031ed3c985716212e048a7e2a6bcd84ad8591587c38f4597a',
-  'testnet': '00000000d0bc4271bcefaa7eb25000e345910ba16b91eb375cd944b68624de9f'
+  'livenet': '0000000e107ee9d6440eda0e0587ee8bfe5f595fb22039f3b88cdd5bc5eb63d1',
+  'testnet': '0000037f5597a126911de1e8e4e65f1a1409e110ead2bc90a5ceb99674fb1dfd'
 };
 var txHash = {
-  'livenet': 'c38e4e2e65d669fdc5eba65f7127dda7aa9394c1d51e60f34712d0b6fb8843b0',
-  'testnet': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b'
+  'livenet': '8831fab0ff98fc6a575924c12e2f29311d6ab49d70b5a069ba566a85c6887522',
+  'testnet': '32d05ed4079328bafaed0f905dbff4d70f01cfc80245e3c6f86366db4a399d68'
 };
 
 // These tests require a running bitcoind instance
