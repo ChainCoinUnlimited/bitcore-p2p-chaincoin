@@ -52,7 +52,7 @@
     "url": "https://github.com/ChainCoinUnlimited/bitcore-p2p-chaincoin.git"
   },
   "dependencies": {
-    "bitcore-lib-chaincoin": "^0.14.3",
+    "bitcore-lib-chaincoin": "^0.15.1",
     "bloom-filter": "^0.2.0",
     "node-buffers": "^0.1.1",
     "socks5-client": "^0.3.6"
